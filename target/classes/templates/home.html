@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>POCs Logs Export</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link th:href="@{/img/ltts logo.jpg}" rel="icon">
+  
+
+  <!-- Vendor CSS Files -->
+  <link th:href="@{/vendor/aos/aos.css}" rel="stylesheet">
+  <link th:href="@{/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+  <link th:href="@{/vendor/bootstrap-icons/bootstrap-icons.css}" rel="stylesheet">
+  <link th:href="@{/vendor/boxicons/css/boxicons.min.css}" rel="stylesheet">
+  <link th:href="@{/vendor/glightbox/css/glightbox.min.css}" rel="stylesheet">
+  <link th:href="@{/vendor/remixicon/remixicon.css}" rel="stylesheet">
+  <link th:href="@{/vendor/swiper/swiper-bundle.min.css}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+        <img th:src="@{/img/lttsimagelogo.png}" alt="" style="width: 100px; height: 40px; margin-right: 1rem;">
+      <h1 class="logo me-auto"><a href="index.html">Logs Export</a></h1>
+      
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Download Logs For Your Remote Application</h1>
+          <h2>Application to export required logs without intervention of support team actually taking out logs and sharing with developers </h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <!--<a href="#about" class="btn-get-started scrollto">DOWNLOAD</a>-->
+            <a th:href="@{/download}" class="btn-get-started scrollto">Download</a>
+
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img th:src="@{/img/hero-img.png}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+    
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+       <marquee>&copy; Copyright <strong><span>LTTS</span></strong>. All Rights Reserved</marquee>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+
+  <!-- Vendor JS Files -->
+  <script th:src="@{/vendor/aos/aos.js}"></script>
+  <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+  <!-- Template Main JS File -->
+  <script th:src="@{/js/main.js}"></script>
+
+</body>
+</html>
